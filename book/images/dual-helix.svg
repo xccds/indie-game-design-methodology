@@ -1,0 +1,163 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560" width="720" height="560">
+  <defs>
+    <linearGradient id="designGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4a90d9;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#2c5f8a;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="protoGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8833a;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#b85a1e;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="marketGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#6abf69;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3d8b3c;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowDesign" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#4a90d9"/>
+    </marker>
+    <marker id="arrowProto" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#e8833a"/>
+    </marker>
+    <marker id="arrowBack" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#888"/>
+    </marker>
+  </defs>
+
+  <rect width="720" height="560" rx="8" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="360" y="28" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="16" font-weight="bold" fill="#333">双螺旋模型：设计线 × 原型线 × 市场校验</text>
+
+  <!-- Column headers -->
+  <rect x="30" y="44" width="180" height="30" rx="6" fill="url(#designGrad)" filter="url(#shadow)"/>
+  <text x="120" y="64" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#fff">设计线（自顶向下）</text>
+
+  <rect x="260" y="44" width="200" height="30" rx="6" fill="url(#protoGrad)" filter="url(#shadow)"/>
+  <text x="360" y="64" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#fff">原型线（自底向上）</text>
+
+  <rect x="510" y="44" width="180" height="30" rx="6" fill="url(#marketGrad)" filter="url(#shadow)"/>
+  <text x="600" y="64" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#fff">市场校验（隐线）</text>
+
+  <!-- Row 1: Step 1 -->
+  <rect x="30" y="88" width="180" height="50" rx="8" fill="#e8f0fb" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="120" y="108" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#2c5f8a">① 概念孵化</text>
+  <text x="120" y="126" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#4a90d9">概念要素表 + 市场假设</text>
+
+  <rect x="260" y="88" width="200" height="50" rx="8" fill="#fef0e6" stroke="#e8833a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="360" y="113" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" fill="#b85a1e">（脑内原型）</text>
+
+  <rect x="510" y="88" width="180" height="50" rx="8" fill="#eaf7ea" stroke="#6abf69" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="108" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#3d8b3c">竞品研究</text>
+  <text x="600" y="126" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#6abf69">3 直接 + 5 间接</text>
+
+  <!-- Design → Proto arrow (Step 1) -->
+  <line x1="215" y1="113" x2="254" y2="113" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowDesign)"/>
+
+  <!-- Double arrow between Step 1 and Step 2 -->
+  <line x1="90" y1="143" x2="90" y2="168" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowDesign)"/>
+  <line x1="150" y1="168" x2="150" y2="143" stroke="#888" stroke-width="1.5" marker-end="url(#arrowBack)" stroke-dasharray="4,3"/>
+
+  <!-- Row 2: Step 2 -->
+  <rect x="30" y="172" width="180" height="50" rx="8" fill="#e8f0fb" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="120" y="192" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#2c5f8a">② 轻量设计概要</text>
+  <text x="120" y="210" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#4a90d9">一页纸 GDD（Pillars + Loop）</text>
+
+  <rect x="260" y="172" width="200" height="50" rx="8" fill="#fef0e6" stroke="#e8833a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="360" y="197" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" fill="#b85a1e">③ 纸上原型</text>
+
+  <rect x="510" y="172" width="180" height="50" rx="8" fill="#eaf7ea" stroke="#6abf69" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="197" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#3d8b3c">市场假设</text>
+
+  <line x1="215" y1="197" x2="254" y2="197" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowDesign)"/>
+
+  <!-- Double arrow Step 2 ↔ Step 3 (tighter) -->
+  <line x1="90" y1="227" x2="90" y2="252" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowDesign)"/>
+  <line x1="150" y1="252" x2="150" y2="227" stroke="#888" stroke-width="1.5" marker-end="url(#arrowBack)" stroke-dasharray="3,2"/>
+
+  <!-- Row 3: Step 3 (prototype main stage) -->
+  <rect x="30" y="256" width="180" height="50" rx="8" fill="#e8f0fb" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="120" y="276" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#2c5f8a">（原型线主战场）</text>
+  <text x="120" y="294" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#4a90d9">设计回流最剧烈节点</text>
+
+  <rect x="260" y="256" width="200" height="50" rx="8" fill="#fef0e6" stroke="#e8833a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="360" y="276" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#b85a1e">③ 数字原型（MVP）</text>
+  <text x="360" y="294" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#e8833a">Toy First → Game → Juicy</text>
+
+  <rect x="510" y="256" width="180" height="50" rx="8" fill="#eaf7ea" stroke="#6abf69" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="276" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#3d8b3c">devlog / GIF / 短视频</text>
+  <text x="600" y="294" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#6abf69">社交媒体测关注度</text>
+
+  <!-- Proto → Design return arrow (strong) -->
+  <line x1="255" y1="281" x2="216" y2="281" stroke="#888" stroke-width="2.5" marker-end="url(#arrowBack)"/>
+
+  <!-- Double arrow Step 3 → Step 4 (tighter) -->
+  <line x1="90" y1="311" x2="90" y2="336" stroke="#4a90d9" stroke-width="1.8" marker-end="url(#arrowDesign)"/>
+  <line x1="150" y1="336" x2="150" y2="311" stroke="#888" stroke-width="1.2" marker-end="url(#arrowBack)" stroke-dasharray="2,2"/>
+
+  <!-- Row 4: Step 4 (design main stage) -->
+  <rect x="30" y="340" width="180" height="50" rx="8" fill="#e8f0fb" stroke="#4a90d9" stroke-width="2" filter="url(#shadow)"/>
+  <text x="120" y="360" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#2c5f8a">④ 设计深化</text>
+  <text x="120" y="378" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#4a90d9">十页纸 + Scope Budget</text>
+
+  <rect x="260" y="340" width="200" height="50" rx="8" fill="#fef0e6" stroke="#e8833a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="360" y="360" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#b85a1e">（微原型验证）</text>
+  <text x="360" y="378" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#e8833a">每个新系统 1-2 天</text>
+
+  <rect x="510" y="340" width="180" height="50" rx="8" fill="#eaf7ea" stroke="#6abf69" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="365" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#3d8b3c">（等待 Step 5 视觉资产）</text>
+
+  <line x1="215" y1="365" x2="254" y2="365" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowDesign)"/>
+
+  <!-- Double arrow Step 4 → Step 5 (tighter) -->
+  <line x1="90" y1="395" x2="90" y2="418" stroke="#4a90d9" stroke-width="1.5" marker-end="url(#arrowDesign)"/>
+  <line x1="150" y1="418" x2="150" y2="395" stroke="#888" stroke-width="1" marker-end="url(#arrowBack)" stroke-dasharray="2,2"/>
+
+  <!-- Row 5: Step 5 (tight spiral) -->
+  <rect x="30" y="424" width="180" height="50" rx="8" fill="#e8f0fb" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="120" y="444" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#2c5f8a">⑤ 垂直切片准备</text>
+  <text x="120" y="462" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#4a90d9">精确规格 + 管线标准</text>
+
+  <rect x="260" y="424" width="200" height="50" rx="8" fill="#fef0e6" stroke="#e8833a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="360" y="444" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#b85a1e">⑤ 垂直切片（管线验证）</text>
+  <text x="360" y="462" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#e8833a">最终品质截面 + 产能测算</text>
+
+  <rect x="510" y="424" width="180" height="50" rx="8" fill="#eaf7ea" stroke="#6abf69" stroke-width="2" filter="url(#shadow)"/>
+  <text x="600" y="444" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#3d8b3c">Steam 页面</text>
+  <text x="600" y="462" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#6abf69">收集愿望单</text>
+
+  <line x1="215" y1="449" x2="254" y2="449" stroke="#4a90d9" stroke-width="1.5" marker-end="url(#arrowDesign)"/>
+  <line x1="255" y1="449" x2="216" y2="449" stroke="#888" stroke-width="1.5" marker-end="url(#arrowBack)"/>
+
+  <!-- Double arrow Step 5 → Step 6 (tightest) -->
+  <line x1="90" y1="479" x2="90" y2="498" stroke="#4a90d9" stroke-width="1.2" marker-end="url(#arrowDesign)"/>
+  <line x1="150" y1="498" x2="150" y2="479" stroke="#888" stroke-width="0.8" marker-end="url(#arrowBack)" stroke-dasharray="1,2"/>
+
+  <!-- Row 6: Step 6 -->
+  <rect x="30" y="502" width="180" height="42" rx="8" fill="#e8f0fb" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="120" y="528" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#2c5f8a">⑥ 生产开发</text>
+
+  <rect x="260" y="502" width="200" height="42" rx="8" fill="#fef0e6" stroke="#e8833a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="360" y="528" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" fill="#b85a1e">⑥ 内容生产 + 微原型</text>
+
+  <rect x="510" y="502" width="180" height="42" rx="8" fill="#eaf7ea" stroke="#6abf69" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="600" y="528" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#3d8b3c">demo / 展会 / 主播</text>
+
+  <line x1="215" y1="523" x2="254" y2="523" stroke="#4a90d9" stroke-width="1.2" marker-end="url(#arrowDesign)"/>
+  <line x1="255" y1="523" x2="216" y2="523" stroke="#888" stroke-width="1.2" marker-end="url(#arrowBack)"/>
+
+  <!-- Convergence indicator -->
+  <text x="540" y="550" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#999">← 螺旋收敛：早期松（可大改）→ 晚期紧（仅微调）</text>
+
+  <!-- Legend -->
+  <rect x="30" y="552" width="10" height="10" rx="2" fill="#4a90d9"/>
+  <text x="44" y="562" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#666">设计线</text>
+  <rect x="100" y="552" width="10" height="10" rx="2" fill="#e8833a"/>
+  <text x="114" y="562" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#666">原型线</text>
+  <rect x="170" y="552" width="10" height="10" rx="2" fill="#6abf69"/>
+  <text x="184" y="562" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#666">市场线</text>
+  <line x1="240" y1="557" x2="260" y2="557" stroke="#888" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="264" y="562" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#666">回流</text>
+</svg>

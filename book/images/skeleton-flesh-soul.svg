@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 460" width="680" height="460">
+  <defs>
+    <linearGradient id="soulGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8d5f5;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#c4a6db;stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="fleshGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fde8d0;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#f5c487;stop-opacity:0.8"/>
+    </linearGradient>
+    <linearGradient id="skeletonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4e8f0;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#8ab8cc;stop-opacity:0.8"/>
+    </linearGradient>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrowGray" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#999"/>
+    </marker>
+  </defs>
+
+  <rect width="680" height="460" rx="8" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="340" y="28" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="16" font-weight="bold" fill="#333">骨架 — 血肉 — 灵魂 三层模型</text>
+
+  <!-- === 灵魂层 (outermost) === -->
+  <rect x="50" y="48" width="580" height="344" rx="16" fill="url(#soulGrad)" stroke="#9b6bb0" stroke-width="2.5" filter="url(#shadow)"/>
+
+  <!-- 灵魂 label top -->
+  <rect x="240" y="38" width="200" height="28" rx="14" fill="#8b5ea0"/>
+  <text x="340" y="57" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" font-weight="bold" fill="#fff">灵魂（情感与意义）</text>
+
+  <!-- 灵魂 core question -->
+  <text x="340" y="76" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#6b3a7d">关掉游戏后，心里留下什么？</text>
+
+  <!-- 灵魂 keywords -->
+  <text x="340" y="96" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#7b528d">叙事驱动 · 情感曲线 · 隐喻与寓意 · 回味感受</text>
+
+  <!-- === 血肉层 (middle) === -->
+  <rect x="80" y="112" width="520" height="256" rx="14" fill="url(#fleshGrad)" stroke="#d4954a" stroke-width="2.5" filter="url(#shadow)"/>
+
+  <!-- 血肉 label top -->
+  <rect x="260" y="102" width="160" height="28" rx="14" fill="#c47a2e"/>
+  <text x="340" y="121" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" font-weight="bold" fill="#fff">血肉（表现与动态）</text>
+
+  <!-- 血肉 core question -->
+  <text x="340" y="140" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#8b5418">规则运行起来，玩家每刻在经历什么？</text>
+
+  <!-- 血肉 sub-dimensions -->
+  <rect x="100" y="152" width="230" height="44" rx="8" fill="#fff" fill-opacity="0.5" stroke="#e8a64a" stroke-width="1.2"/>
+  <text x="215" y="168" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#b85a1e">感官反馈</text>
+  <text x="215" y="184" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#c47a2e">动画 · 音效 · 粒子 · 震动 · UI 动效</text>
+
+  <rect x="350" y="152" width="230" height="44" rx="8" fill="#fff" fill-opacity="0.5" stroke="#e8a64a" stroke-width="1.2"/>
+  <text x="465" y="168" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#b85a1e">行为动态</text>
+  <text x="465" y="184" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#c47a2e">系统交互 · 资源取舍 · 操作节奏</text>
+
+  <!-- === 骨架层 (innermost) === -->
+  <rect x="115" y="212" width="450" height="130" rx="14" fill="url(#skeletonGrad)" stroke="#5a94a8" stroke-width="2.5" filter="url(#shadow)"/>
+
+  <!-- 骨架 label top -->
+  <rect x="280" y="202" width="160" height="28" rx="14" fill="#3d7a8f"/>
+  <text x="360" y="221" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" font-weight="bold" fill="#fff">骨架（机制与规则）</text>
+
+  <!-- 骨架 core question -->
+  <text x="360" y="242" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#2d5a6b">游戏的规则是什么？</text>
+
+  <!-- 骨架 keywords -->
+  <text x="360" y="262" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#3d6478">Core Loop · 风险与回报 · 操作负荷 · 关卡设计 · 数据结构</text>
+
+  <!-- 骨架 icons -->
+  <rect x="145" y="278" width="36" height="36" rx="6" fill="#3d7a8f" opacity="0.15" stroke="#3d7a8f" stroke-width="1"/>
+  <text x="163" y="301" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3d7a8f">⚙</text>
+  <rect x="195" y="278" width="36" height="36" rx="6" fill="#3d7a8f" opacity="0.15" stroke="#3d7a8f" stroke-width="1"/>
+  <text x="213" y="301" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3d7a8f">↻</text>
+  <rect x="245" y="278" width="36" height="36" rx="6" fill="#3d7a8f" opacity="0.15" stroke="#3d7a8f" stroke-width="1"/>
+  <text x="263" y="301" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3d7a8f">▲</text>
+  <rect x="295" y="278" width="36" height="36" rx="6" fill="#3d7a8f" opacity="0.15" stroke="#3d7a8f" stroke-width="1"/>
+  <text x="313" y="301" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3d7a8f">▣</text>
+  <rect x="345" y="278" width="36" height="36" rx="6" fill="#3d7a8f" opacity="0.15" stroke="#3d7a8f" stroke-width="1"/>
+  <text x="363" y="301" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3d7a8f">∑</text>
+  <rect x="395" y="278" width="36" height="36" rx="6" fill="#3d7a8f" opacity="0.15" stroke="#3d7a8f" stroke-width="1"/>
+  <text x="413" y="301" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#3d7a8f">⇄</text>
+
+  <!-- Labels for icons -->
+  <text x="163" y="326" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#5a8a9a">规则</text>
+  <text x="213" y="326" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#5a8a9a">循环</text>
+  <text x="263" y="326" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#5a8a9a">风险</text>
+  <text x="313" y="326" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#5a8a9a">关卡</text>
+  <text x="363" y="326" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#5a8a9a">数值</text>
+  <text x="413" y="326" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#5a8a9a">反馈</text>
+
+  <!-- === Right side annotations === -->
+  <line x1="635" y1="220" x2="658" y2="220" stroke="#9b6bb0" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="660" y="213" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#7b4d8f">事后回味</text>
+  <text x="660" y="227" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#7b4d8f">设计师间接塑造</text>
+
+  <line x1="605" y1="240" x2="658" y2="240" stroke="#c47a2e" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="660" y="233" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#a06420">即刻体验</text>
+  <text x="660" y="247" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#a06420">感官 + 行为</text>
+
+  <line x1="570" y1="277" x2="658" y2="277" stroke="#3d7a8f" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="660" y="270" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#3d7a8f">设计师直接创造</text>
+  <text x="660" y="284" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#3d7a8f">代码 · 数值 · 数据结构</text>
+
+  <!-- === Arrow legends at bottom === -->
+  <line x1="80" y1="408" x2="180" y2="408" stroke="#999" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <text x="190" y="412" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#777">骨架支撑血肉</text>
+
+  <line x1="360" y1="408" x2="460" y2="408" stroke="#999" stroke-width="1.5" marker-end="url(#arrowGray)"/>
+  <text x="470" y="412" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#777">血肉承载灵魂</text>
+
+  <!-- Bottom note -->
+  <text x="340" y="448" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#aaa">单向依赖，逆向验证：灵魂定义目标 → 血肉承载感受 → 骨架实现规则</text>
+</svg>

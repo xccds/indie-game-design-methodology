@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420">
+  <defs>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrowD" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#4a90d9"/>
+    </marker>
+    <marker id="arrowP" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#e8833a"/>
+    </marker>
+    <marker id="arrowBack" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#888"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#51cf66"/>
+    </marker>
+    <marker id="arrowRed" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
+      <path d="M0,0 L7,3.5 L0,7 Z" fill="#ff6b6b"/>
+    </marker>
+  </defs>
+
+  <rect width="720" height="420" rx="8" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="360" y="26" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="15" font-weight="bold" fill="#333">双螺旋在原型验证节点的运行逻辑</text>
+
+  <!-- Column labels -->
+  <text x="180" y="52" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#4a90d9">设计线</text>
+  <text x="540" y="52" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#e8833a">原型线</text>
+
+  <!-- Design Line: Step 1 -->
+  <rect x="30" y="66" width="300" height="40" rx="8" fill="#e8f0fb" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="180" y="90" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#2c5f8a">Step 1：概念孵化</text>
+
+  <!-- Design Line: Step 2 -->
+  <rect x="30" y="118" width="300" height="40" rx="8" fill="#e8f0fb" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="180" y="142" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#2c5f8a">Step 2：One-Pager（轻量设计概要）</text>
+
+  <!-- Design Line: Step 3 (the focal point) -->
+  <rect x="30" y="172" width="300" height="46" rx="8" fill="#dae8f7" stroke="#4a90d9" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="180" y="190" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#1e4a6b">Step 3：原型验证（交汇节点）</text>
+  <text x="180" y="208" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#4a90d9">A→B→C→D 原型流程</text>
+
+  <!-- Design Line: Step 4 -->
+  <rect x="30" y="230" width="300" height="40" rx="8" fill="#e8f0fb" stroke="#4a90d9" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="180" y="254" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#2c5f8a">Step 4：设计深化（Ten-Pager）</text>
+
+  <!-- Design arrows down -->
+  <line x1="180" y1="107" x2="180" y2="116" stroke="#4a90d9" stroke-width="1.5" marker-end="url(#arrowD)"/>
+  <line x1="180" y1="159" x2="180" y2="170" stroke="#4a90d9" stroke-width="1.5" marker-end="url(#arrowD)"/>
+
+  <!-- Proto Line: A→B→C→D flow -->
+  <rect x="390" y="66" width="300" height="40" rx="8" fill="#fef0e6" stroke="#e8833a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="540" y="84" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#b85a1e">A. 纸上原型 → B. Toy First</text>
+  <text x="540" y="98" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#e8833a">单机制验证</text>
+
+  <rect x="390" y="118" width="300" height="40" rx="8" fill="#fef0e6" stroke="#e8833a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="540" y="136" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#b85a1e">C. Toy→Game → D. Juicy</text>
+  <text x="540" y="150" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#e8833a">向 MVP 收敛</text>
+
+  <!-- Proto arrows -->
+  <line x1="540" y1="107" x2="540" y2="116" stroke="#e8833a" stroke-width="1.5" marker-end="url(#arrowP)"/>
+
+  <!-- Design → Proto: Step 2 outputs feed into Proto -->
+  <line x1="335" y1="138" x2="384" y2="138" stroke="#4a90d9" stroke-width="2" marker-end="url(#arrowD)" stroke-dasharray="6,3"/>
+  <text x="360" y="132" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#4a90d9">指引原型</text>
+
+  <!-- Playtest result box -->
+  <rect x="390" y="172" width="300" height="46" rx="8" fill="#faece3" stroke="#e8833a" stroke-width="2.5" filter="url(#shadow)"/>
+  <text x="540" y="192" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#b85a1e">Playtest → 结果判断</text>
+  <text x="540" y="208" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#e8833a">5 个不认识的目标玩家</text>
+
+  <!-- Proto → Playtest arrow -->
+  <line x1="540" y1="159" x2="540" y2="170" stroke="#e8833a" stroke-width="1.5" marker-end="url(#arrowP)"/>
+
+  <!-- Result A: good → Step 4 -->
+  <path d="M 390 195 L 350 195 L 350 250 L 336 250" stroke="#51cf66" stroke-width="2.5" fill="none" marker-end="url(#arrowGreen)"/>
+  <text x="372" y="188" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#51cf66">好玩 ✓</text>
+  <text x="372" y="202" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#51cf66">进入 Step 4</text>
+
+  <!-- Result B: unclear → Step 2 -->
+  <path d="M 390 195 L 310 195 L 310 138 L 336 138" stroke="#e8a838" stroke-width="2.5" fill="none" marker-end="url(#arrowBack)"/>
+  <text x="300" y="188" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#e8a838">不清晰</text>
+  <text x="300" y="202" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#e8a838">回流 Step 2</text>
+
+  <!-- Result C: bad → Step 1 -->
+  <path d="M 390 195 L 270 195 L 270 86 L 336 86" stroke="#ff6b6b" stroke-width="2.5" fill="none" marker-end="url(#arrowRed)"/>
+  <text x="258" y="188" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#ff6b6b">不好玩</text>
+  <text x="258" y="202" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#ff6b6b">回流 Step 1</text>
+
+  <!-- Kill Criteria section -->
+  <rect x="30" y="290" width="660" height="112" rx="8" fill="#fff5f5" stroke="#ff6b6b" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="360" y="314" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#cc3333">⚡ Kill Criteria（退出条件）</text>
+
+  <text x="60" y="338" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#cc3333">• 连续 3 轮测试者无法理解核心玩法 → 停止</text>
+  <text x="60" y="356" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#cc3333">• 连续 3 轮迭代后测试者仍然没兴趣 → 停止项目</text>
+  <text x="60" y="374" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#cc3333">• 市场反馈极弱（数周无人关注）→ 重新评估定位</text>
+  <text x="60" y="392" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#cc3333">• 一个核心机制验证超过 1 个月仍未收敛 → 范围过大，拆分问题</text>
+
+</svg>

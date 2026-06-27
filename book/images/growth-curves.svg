@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 420" width="680" height="420">
+  <defs>
+    <marker id="arrowEnd" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect width="680" height="420" rx="8" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="340" y="26" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="15" font-weight="bold" fill="#333">四种基本成长曲线</text>
+
+  <!-- Axes -->
+  <line x1="70" y1="50" x2="70" y2="360" stroke="#555" stroke-width="1.5" marker-end="url(#arrowEnd)"/>
+  <line x1="70" y1="330" x2="640" y2="330" stroke="#555" stroke-width="1.5" marker-end="url(#arrowEnd)"/>
+
+  <!-- Y-axis label -->
+  <text x="18" y="200" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#555" transform="rotate(-90,18,200)">能力值</text>
+
+  <!-- X-axis label -->
+  <text x="355" y="398" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#555">等级 / 时间</text>
+
+  <!-- Grid lines -->
+  <line x1="70" y1="260" x2="630" y2="260" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="70" y1="190" x2="630" y2="190" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="70" y1="120" x2="630" y2="120" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="210" y1="50" x2="210" y2="330" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="350" y1="50" x2="350" y2="330" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4,4"/>
+  <line x1="490" y1="50" x2="490" y2="330" stroke="#e0e0e0" stroke-width="0.5" stroke-dasharray="4,4"/>
+
+  <!-- Exponential curve: y = 30 + 3 * 1.25^(x/70) -->
+  <polyline points="70,325 100,324 150,318 200,310 250,296 300,274 350,240 400,190 450,120 500,30"
+            fill="none" stroke="#e74c3c" stroke-width="2.8" stroke-linejoin="round"/>
+
+  <!-- S-curve: logistic function -->
+  <polyline points="70,325 90,324 120,321 160,315 200,304 240,284 280,250 310,210 340,160 370,110 400,68 420,52 450,40 480,35"
+            fill="none" stroke="#8e44ad" stroke-width="2.8" stroke-linejoin="round"/>
+
+  <!-- Linear: y = 325 - 3.5x -->
+  <polyline points="70,325 150,297 230,269 310,241 390,213 470,185 550,157 620,132"
+            fill="none" stroke="#3498db" stroke-width="2.8" stroke-linejoin="round"/>
+
+  <!-- Logarithmic: y = 325 - 80*log(x/50+1) -->
+  <polyline points="70,325 110,291 150,266 200,244 260,224 320,210 390,198 460,188 540,179 620,173"
+            fill="none" stroke="#27ae60" stroke-width="2.8" stroke-linejoin="round"/>
+
+  <!-- Labels -->
+  <!-- Exponential -->
+  <text x="490" y="22" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#e74c3c">指数型</text>
+  <text x="490" y="38" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#e74c3c">越往后越猛，适合"飞升"感</text>
+
+  <!-- S-curve -->
+  <text x="268" y="62" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#8e44ad">S 曲线</text>
+  <text x="268" y="78" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#8e44ad">早期缓慢，中期爆发，后期饱和</text>
+
+  <!-- Linear -->
+  <text x="550" y="142" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#3498db">线性</text>
+  <text x="550" y="158" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#3498db">每级固定增长，最可预测</text>
+
+  <!-- Logarithmic -->
+  <text x="490" y="168" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#27ae60">对数型</text>
+  <text x="490" y="184" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#27ae60">前期回报大，后期递减</text>
+  <text x="490" y="198" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#27ae60">驱动"再来一级就睡"</text>
+
+  <!-- Dotted guide lines from labels to curves -->
+  <line x1="480" y1="30" x2="490" y2="50" stroke="#e74c3c" stroke-width="0.8" stroke-dasharray="2,3"/>
+  <line x1="340" y1="82" x2="380" y2="120" stroke="#8e44ad" stroke-width="0.8" stroke-dasharray="2,3"/>
+  <line x1="540" y1="163" x2="550" y2="157" stroke="#3498db" stroke-width="0.8" stroke-dasharray="2,3"/>
+  <line x1="480" y1="202" x2="450" y2="187" stroke="#27ae60" stroke-width="0.8" stroke-dasharray="2,3"/>
+
+  <!-- Legend box -->
+  <rect x="80" y="370" width="520" height="32" rx="6" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="100" y1="386" x2="140" y2="386" stroke="#e74c3c" stroke-width="2.5"/>
+  <text x="148" y="390" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#555">指数型</text>
+  <line x1="210" y1="386" x2="250" y2="386" stroke="#8e44ad" stroke-width="2.5"/>
+  <text x="258" y="390" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#555">S 曲线</text>
+  <line x1="320" y1="386" x2="360" y2="386" stroke="#3498db" stroke-width="2.5"/>
+  <text x="368" y="390" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#555">线性</text>
+  <line x1="430" y1="386" x2="470" y2="386" stroke="#27ae60" stroke-width="2.5"/>
+  <text x="478" y="390" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#555">对数型</text>
+</svg>
