@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 500" width="520" height="500">
+  <defs>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#555"/>
+    </marker>
+    <marker id="arrowGreen" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#27ae60"/>
+    </marker>
+    <linearGradient id="observeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="defGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#ffe0b2;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="atkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce4ec;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#f8bbd0;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="resultGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="520" height="500" rx="8" fill="#fafafa"/>
+
+  <text x="260" y="26" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="15" font-weight="bold" fill="#333">攻击循环：战斗的骨架</text>
+
+  <!-- Stage 1: 观察/等待 -->
+  <rect x="115" y="42" width="290" height="50" rx="10" fill="url(#observeGrad)" stroke="#42a5f5" stroke-width="2" filter="url(#shadow)"/>
+  <text x="260" y="62" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#1565c0">观察 / 等待</text>
+  <text x="260" y="80" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#42a5f5">识别敌人的攻击模式与间隙</text>
+
+  <!-- Arrow down -->
+  <line x1="260" y1="93" x2="260" y2="112" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Branch label -->
+  <text x="260" y="108" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#999">敌人出招</text>
+
+  <!-- Stage 2a: 防御 -->
+  <rect x="45" y="116" width="200" height="50" rx="10" fill="url(#defGrad)" stroke="#ff9800" stroke-width="2" filter="url(#shadow)"/>
+  <text x="145" y="136" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#e65100">防御</text>
+  <text x="145" y="154" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#ff9800">格挡 / 闪避</text>
+
+  <!-- Stage 2b: 移动 -->
+  <rect x="275" y="116" width="200" height="50" rx="10" fill="url(#defGrad)" stroke="#ff9800" stroke-width="2" filter="url(#shadow)"/>
+  <text x="375" y="136" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#e65100">移动</text>
+  <text x="375" y="154" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#ff9800">走位 / 翻滚</text>
+
+  <!-- Branch arrows from observe to def/move -->
+  <path d="M 200 92 L 145 92 L 145 114" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 320 92 L 375 92 L 375 114" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Convergence arrows from def/move -->
+  <path d="M 145 167 L 145 185 L 260 185 L 260 205" stroke="#555" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 375 167 L 375 185 L 260 185" stroke="#555" stroke-width="1.5" fill="none"/>
+
+  <text x="260" y="182" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#999">找到攻击窗口</text>
+
+  <!-- Stage 3: 攻击 -->
+  <rect x="115" y="210" width="290" height="55" rx="10" fill="url(#atkGrad)" stroke="#e57373" stroke-width="2" filter="url(#shadow)"/>
+  <text x="260" y="232" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#c62828">攻击</text>
+  <text x="260" y="250" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#ef5350">轻攻 / 重攻 / 技能</text>
+
+  <!-- 时机标注 -->
+  <text x="415" y="232" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#e57373">前摇帧</text>
+  <text x="415" y="246" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#e57373">攻击位移</text>
+  <text x="415" y="260" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#e57373">收尾帧</text>
+
+  <!-- Arrow down -->
+  <line x1="260" y1="266" x2="260" y2="285" stroke="#555" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Stage 4: 命中/未命中 -->
+  <rect x="115" y="290" width="290" height="55" rx="10" fill="url(#resultGrad)" stroke="#66bb6a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="260" y="312" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="13" font-weight="bold" fill="#2e7d32">命中 / 未命中</text>
+  <text x="260" y="330" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#66bb6a">伤害计算反馈</text>
+
+  <!-- 四层反馈标注 -->
+  <text x="415" y="308" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#81c784">动画停顿</text>
+  <text x="415" y="322" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#81c784">音效</text>
+  <text x="415" y="336" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#81c784">特效 + 震动</text>
+
+  <!-- Return arrow back to observe -->
+  <path d="M 115 317 L 30 317 L 30 67 L 109 67" stroke="#27ae60" stroke-width="2.5" fill="none" marker-end="url(#arrowGreen)" stroke-dasharray="8,4"/>
+
+  <text x="30" y="200" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#2e7d32" transform="rotate(-90,30,200)">回到观察 / 等待（下一轮）</text>
+
+  <!-- Right side annotation box -->
+  <rect x="415" y="355" width="90" height="130" rx="6" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="460" y="375" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" font-weight="bold" fill="#555">循环周期</text>
+  <text x="460" y="395" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#888">2-5 秒</text>
+  <text x="460" y="415" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#888">每次遭遇</text>
+  <text x="460" y="435" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#888">重复数十次</text>
+  <text x="460" y="460" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#aaa">（一场战斗）</text>
+
+</svg>

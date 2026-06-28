@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <marker id="arrowX" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#888"/>
+    </marker>
+    <marker id="arrowY" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto">
+      <path d="M0,0 L4,8 L8,0 Z" fill="#888"/>
+    </marker>
+  </defs>
+
+  <rect width="640" height="320" rx="8" fill="#fafafa"/>
+
+  <text x="320" y="24" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" font-weight="bold" fill="#333">单关内的叙事弧线</text>
+
+  <!-- Axes -->
+  <line x1="60" y1="50" x2="60" y2="265" stroke="#888" stroke-width="1.5" marker-end="url(#arrowY)"/>
+  <line x1="60" y1="260" x2="610" y2="260" stroke="#888" stroke-width="1.5" marker-end="url(#arrowX)"/>
+
+  <text x="20" y="155" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#666" transform="rotate(-90,20,155)">强度</text>
+
+  <!-- Phase dividers -->
+  <line x1="210" y1="50" x2="210" y2="260" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="390" y1="50" x2="390" y2="260" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="4,4"/>
+  <line x1="540" y1="50" x2="540" y2="260" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="4,4"/>
+
+  <!-- Phase labels -->
+  <text x="135" y="278" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#999">前 1/3</text>
+  <text x="300" y="278" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#999">中 1/3</text>
+  <text x="465" y="278" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#999">后 1/3</text>
+
+  <!-- Intensity curve -->
+  <path d="M 65 240 Q 130 235 180 210 Q 230 185 290 175 Q 360 165 420 140 Q 460 120 500 85 Q 540 55 580 50 L 610 48"
+        fill="none" stroke="#e74c3c" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Phase annotations on curve -->
+  <text x="120" y="218" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#e74c3c">引入</text>
+  <text x="120" y="233" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#e57373">安全环境展示新机制</text>
+
+  <text x="270" y="180" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#e74c3c">发展</text>
+  <text x="270" y="195" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#e57373">逐步加深已学会的机制</text>
+
+  <text x="430" y="128" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#e74c3c">转折</text>
+  <text x="430" y="143" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#e57373">新敌人/机制组合/环境变化</text>
+
+  <text x="555" y="60" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#e74c3c">高潮</text>
+  <text x="555" y="75" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#e57373">Boss / 复合谜题</text>
+
+  <!-- Breathing points (small drops) -->
+  <circle cx="250" cy="188" r="5" fill="#43a047" opacity="0.7"/>
+  <circle cx="400" cy="153" r="5" fill="#43a047" opacity="0.7"/>
+  <circle cx="500" cy="98" r="5" fill="#43a047" opacity="0.7"/>
+
+  <text x="250" y="204" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="8" fill="#43a047">呼吸点</text>
+  <text x="400" y="169" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="8" fill="#43a047">呼吸点</text>
+  <text x="500" y="114" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="8" fill="#43a047">呼吸点</text>
+
+  <!-- Bottom legend -->
+  <text x="320" y="308" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#aaa">各阶段之间有安全过渡空间，让玩家从紧张中恢复</text>
+</svg>

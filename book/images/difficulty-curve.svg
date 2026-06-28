@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" width="640" height="320">
+  <defs>
+    <marker id="arrowX" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#888"/>
+    </marker>
+    <marker id="arrowY" markerWidth="8" markerHeight="8" refX="4" refY="7" orient="auto">
+      <path d="M0,0 L4,8 L8,0 Z" fill="#888"/>
+    </marker>
+  </defs>
+
+  <rect width="640" height="320" rx="8" fill="#fafafa"/>
+
+  <text x="320" y="24" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="14" font-weight="bold" fill="#333">难度曲线：不总是线性上升</text>
+
+  <!-- Axes -->
+  <line x1="60" y1="50" x2="60" y2="265" stroke="#888" stroke-width="1.5" marker-end="url(#arrowY)"/>
+  <line x1="60" y1="260" x2="610" y2="260" stroke="#888" stroke-width="1.5" marker-end="url(#arrowX)"/>
+
+  <text x="18" y="155" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#666" transform="rotate(-90,18,155)">难度</text>
+  <text x="335" y="300" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#666">关卡进度</text>
+
+  <!-- Zigzag curve (actual difficulty) -->
+  <polyline points="65,235 120,225 150,215 180,210 200,230 230,225 250,220 270,240 280,232 300,226 330,235 350,210 370,205 400,215 420,190 440,185 460,195 480,170 500,165 520,180 540,148 560,145 580,155 600,130"
+            fill="none" stroke="#e74c3c" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Zigzag label -->
+  <text x="460" y="208" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#e74c3c">实际难度曲线</text>
+  <text x="460" y="222" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#e57373">锯齿形：攀爬 → 跌落 → 再攀爬</text>
+
+  <!-- Linear curve (novice designer imagination) -->
+  <polyline points="65,235 150,210 250,185 350,160 450,135 550,110 610,95"
+            fill="none" stroke="#4a90d9" stroke-width="2" stroke-dasharray="8,4" stroke-linecap="round"/>
+
+  <!-- Linear curve label -->
+  <text x="380" y="82" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#4a90d9">新手设计师想象的曲线</text>
+  <text x="380" y="96" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#64b5f6">一条直线往上</text>
+
+  <!-- Annotation: climb -->
+  <path d="M 130 222 L 130 240 L 178 240 L 178 228" stroke="#43a047" stroke-width="1.2" fill="none"/>
+  <text x="155" y="252" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#43a047">机制加深</text>
+
+  <!-- Annotation: drop -->
+  <path d="M 265 238 L 265 250 L 325 250 L 325 236" stroke="#ff9800" stroke-width="1.2" fill="none"/>
+  <text x="295" y="262" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#ff9800">引入新机制 → 重置难度</text>
+
+  <!-- Annotation: re-climb -->
+  <path d="M 410 218 L 410 270 L 500 270 L 500 180" stroke="#43a047" stroke-width="1.2" fill="none"/>
+  <text x="455" y="282" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#43a047">新+旧机制组合 → 难度再攀</text>
+
+  <!-- Small drop markers -->
+  <circle cx="200" cy="230" r="4" fill="#ff9800"/>
+  <circle cx="370" cy="205" r="4" fill="#ff9800"/>
+  <circle cx="480" cy="170" r="4" fill="#ff9800"/>
+
+  <!-- Legend -->
+  <rect x="80" y="290" width="16" height="3" rx="2" fill="#e74c3c"/>
+  <text x="100" y="295" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#888">实际曲线（锯齿）</text>
+  <line x1="220" y1="292" x2="236" y2="292" stroke="#4a90d9" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="240" y="295" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#888">新手想象的曲线（直线）</text>
+</svg>

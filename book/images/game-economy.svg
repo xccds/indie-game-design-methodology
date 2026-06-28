@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" width="720" height="400">
+  <defs>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#666"/>
+    </marker>
+    <marker id="arrowBack" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#27ae60"/>
+    </marker>
+    <linearGradient id="sourceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f5e9;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#c8e6c9;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="convGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff3e0;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#ffe0b2;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="playerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e3f2fd;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#bbdefb;stop-opacity:0.9"/>
+    </linearGradient>
+    <linearGradient id="sinkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fce4ec;stop-opacity:0.9"/>
+      <stop offset="100%" style="stop-color:#f8bbd0;stop-opacity:0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="400" rx="8" fill="#fafafa"/>
+
+  <text x="360" y="26" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="15" font-weight="bold" fill="#333">游戏经济的基本模型</text>
+
+  <!-- ===== SOURCES ===== -->
+  <rect x="15" y="48" width="150" height="200" rx="10" fill="url(#sourceGrad)" stroke="#66bb6a" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="30" y="40" width="120" height="24" rx="8" fill="#43a047"/>
+  <text x="90" y="57" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#fff">来源</text>
+
+  <text x="33" y="80" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#2e7d32">▸ 击杀敌人</text>
+  <text x="33" y="102" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#2e7d32">▸ 完成任务</text>
+  <text x="33" y="124" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#2e7d32">▸ 出售道具</text>
+  <text x="33" y="146" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#2e7d32">▸ 登录奖励</text>
+  <text x="33" y="168" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#2e7d32">▸ 挂机产出</text>
+  <text x="33" y="195" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#81c784">每日自动 + 主动行为</text>
+
+  <line x1="170" y1="148" x2="205" y2="148" stroke="#666" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ===== CONVERSION ===== -->
+  <rect x="210" y="48" width="130" height="200" rx="10" fill="url(#convGrad)" stroke="#ff9800" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="225" y="40" width="100" height="24" rx="8" fill="#e65100"/>
+  <text x="275" y="57" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#fff">转化</text>
+
+  <text x="228" y="85" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#e65100">▸ 商店购买</text>
+  <text x="228" y="107" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#e65100">▸ 合成系统</text>
+  <text x="228" y="129" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#e65100">▸ 交易市场</text>
+
+  <text x="228" y="180" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#ffb74d">资源变成</text>
+  <text x="228" y="195" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="10" fill="#ffb74d">可用资产</text>
+
+  <line x1="345" y1="148" x2="380" y2="148" stroke="#666" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ===== PLAYER ASSETS ===== -->
+  <rect x="385" y="48" width="130" height="200" rx="10" fill="url(#playerGrad)" stroke="#42a5f5" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="385" y="40" width="130" height="24" rx="8" fill="#1565c0"/>
+  <text x="450" y="57" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#fff">玩家资产</text>
+
+  <text x="403" y="95" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#1565c0">金币 💰</text>
+  <text x="403" y="120" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#1565c0">道具 🎒</text>
+  <text x="403" y="145" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" fill="#1565c0">装备 ⚔️</text>
+
+  <line x1="520" y1="148" x2="555" y2="148" stroke="#666" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- ===== CONSUMPTION ===== -->
+  <rect x="560" y="48" width="145" height="200" rx="10" fill="url(#sinkGrad)" stroke="#e57373" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="572" y="40" width="120" height="24" rx="8" fill="#c62828"/>
+  <text x="632" y="57" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="12" font-weight="bold" fill="#fff">消耗</text>
+
+  <text x="578" y="85" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#c62828">▸ 购买装备</text>
+  <text x="578" y="107" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#c62828">▸ 技能升级</text>
+  <text x="578" y="129" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#c62828">▸ 消耗品使用</text>
+  <text x="578" y="151" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#c62828">▸ 修理/维护</text>
+  <text x="578" y="173" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#c62828">▸ 解锁内容</text>
+
+  <!-- ===== FEEDBACK LOOP ===== -->
+  <!-- Bottom return arrow -->
+  <path d="M 348 295 L 348 320 L 90 320 L 90 254" stroke="#27ae60" stroke-width="2.5" fill="none" marker-end="url(#arrowBack)" stroke-dasharray="8,4"/>
+
+  <rect x="150" y="305" width="240" height="28" rx="8" fill="#e8f5e9" stroke="#a5d6a7" stroke-width="1"/>
+  <text x="270" y="315" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="11" fill="#2e7d32">负反馈回路</text>
+  <text x="270" y="329" text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#66bb6a">消耗 → 变穷 → 驱动继续获取</text>
+
+  <!-- Top feedback arrow -->
+  <line x1="632" y1="44" x2="632" y2="32" stroke="#27ae60" stroke-width="1.5" marker-end="url(#arrowBack)" stroke-dasharray="6,3"/>
+
+  <!-- Balance indicators -->
+  <rect x="60" y="350" width="600" height="38" rx="6" fill="#f5f5f5" stroke="#e0e0e0" stroke-width="1"/>
+  <text x="120" y="366" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#999">来源太少 → 卡关/弃坑</text>
+  <text x="290" y="366" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#999">来源太多 → 通胀/货币失效</text>
+  <text x="500" y="366" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#999">消耗不够 → 囤积/失去动力</text>
+  <text x="330" y="380" font-family="'PingFang SC','Microsoft YaHei','Noto Sans SC',sans-serif" font-size="9" fill="#aaa">关键平衡：收入 − 支出 = 轻微正数（给玩家安全感，但不让货币闲置）</text>
+</svg>
