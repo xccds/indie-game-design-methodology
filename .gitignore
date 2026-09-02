@@ -4,5 +4,6 @@
 # Except these
 !book/
 !book/**
+book/教程重大问题审阅.md
 !README.md
 !.gitignore
